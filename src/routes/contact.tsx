@@ -88,6 +88,16 @@ function ContactPage() {
                   />
                 </div>
                 <div>
+                  <label className="block text-sm font-body font-medium text-foreground mb-1">Email *</label>
+                  <input
+                    name="email"
+                    required
+                    type="email"
+                    className="w-full px-4 py-2.5 rounded-xl border border-input bg-background text-foreground font-body text-sm focus:outline-none focus:ring-2 focus:ring-ring"
+                    placeholder="your@email.com"
+                  />
+                </div>
+                <div>
                   <label className="block text-sm font-body font-medium text-foreground mb-1">Phone Number *</label>
                   <input
                     name="phone"
@@ -111,9 +121,10 @@ function ContactPage() {
                   </select>
                 </div>
                 <div>
-                  <label className="block text-sm font-body font-medium text-foreground mb-1">Message</label>
+                  <label className="block text-sm font-body font-medium text-foreground mb-1">Message *</label>
                   <textarea
                     name="message"
+                    required
                     rows={3}
                     className="w-full px-4 py-2.5 rounded-xl border border-input bg-background text-foreground font-body text-sm focus:outline-none focus:ring-2 focus:ring-ring resize-none"
                     placeholder="Tell me about your event, date, and any preferences..."
