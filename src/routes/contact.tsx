@@ -119,11 +119,15 @@ function ContactPage() {
                     placeholder="Tell me about your event, date, and any preferences..."
                   />
                 </div>
+                {error && (
+                  <p className="text-destructive text-sm font-body">{error}</p>
+                )}
                 <button
                   type="submit"
-                  className="w-full bg-primary text-primary-foreground py-3 rounded-xl font-body font-semibold hover:opacity-90 transition-opacity"
+                  disabled={loading}
+                  className="w-full bg-primary text-primary-foreground py-3 rounded-xl font-body font-semibold hover:opacity-90 transition-opacity disabled:opacity-60"
                 >
-                  Submit
+                  {loading ? "Sending..." : "Submit"}
                 </button>
               </form>
             )}
