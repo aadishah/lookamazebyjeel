@@ -34,8 +34,8 @@ export default function Footer() {
           <h4 className="font-heading text-lg font-semibold mb-3">Connect</h4>
           <div className="flex flex-col gap-2 text-sm text-background/70">
             <a href="tel:+917303132488" className="hover:text-background transition-colors">📞 +91 7303132488</a>
-            <a href="https://wa.me/917303132488" target="_blank" rel="noopener noreferrer" className="hover:text-background transition-colors">💬 WhatsApp</a>
-            <a href="https://www.instagram.com/_lookamaze_/" target="_blank" rel="noopener noreferrer" className="hover:text-background transition-colors">📸 @_lookamaze_</a>
+            <a href="https://wa.me/917303132488" rel="noopener noreferrer" className="hover:text-background transition-colors">💬 WhatsApp</a>
+            <a href="https://www.instagram.com/_lookamaze_/" rel="noopener noreferrer" className="hover:text-background transition-colors">📸 @_lookamaze_</a>
             <p>📍 Mumbai, India</p>
           </div>
         </div>

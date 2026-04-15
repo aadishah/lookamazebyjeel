@@ -137,7 +137,7 @@ function ContactPage() {
               <h3 className="font-heading text-lg font-semibold text-foreground">📸 Instagram</h3>
               <a
                 href="https://www.instagram.com/_lookamaze_/"
-                target="_blank"
+                
                 rel="noopener noreferrer"
                 className="mt-1 text-primary font-body font-semibold hover:underline block"
               >
