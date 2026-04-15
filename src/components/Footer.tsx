@@ -17,7 +17,7 @@ export default function Footer() {
             {[
               { to: "/portfolio", label: "Portfolio" },
               { to: "/services", label: "Services" },
-              { to: "/pricing", label: "Pricing" },
+              { to: "/testimonials", label: "Testimonials" },
               { to: "/contact", label: "Contact" },
             ].map((link) => (
               <Link
