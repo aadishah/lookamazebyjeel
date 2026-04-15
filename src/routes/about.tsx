@@ -46,7 +46,7 @@ function AboutPage() {
             </p>
             <div className="mt-6 flex gap-4">
               <a
-                href="https://wa.me/917303132488"
+                href="https://wa.me/917303132488?text=Hi%20Jeel!%20I'd%20like%20to%20book%20a%20makeup%20session."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary text-primary-foreground px-6 py-2.5 rounded-xl font-body font-semibold text-sm hover:opacity-90 transition-opacity"

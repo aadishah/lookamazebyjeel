@@ -35,7 +35,7 @@ function ContactPage() {
   return (
     <div className="pt-24 pb-20 px-4 bg-gradient-warm">
       <div className="max-w-4xl mx-auto">
-        <SectionHeading title="Register & Book ✍️" subtitle="Fill the form below or reach out directly — let's create magic together!" />
+        <SectionHeading title="Contact Us ✍️" subtitle="Fill the form below or reach out directly — let's create magic together!" />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Form */}
@@ -87,11 +87,8 @@ function ContactPage() {
                   >
                     <option value="">Select a service</option>
                     <option value="Bridal Makeup">Bridal Makeup</option>
-                    <option value="Party Makeup">Party Makeup</option>
-                    <option value="Film/TV Makeup">Film/TV Makeup</option>
-                    <option value="Pre-Wedding Shoot">Pre-Wedding Shoot</option>
-                    <option value="Corporate/Editorial">Corporate/Editorial</option>
-                    <option value="Other">Other</option>
+                    <option value="Non-Bridal Makeup">Non-Bridal Makeup</option>
+                    <option value="Self Makeup">Self Makeup</option>
                   </select>
                 </div>
                 <div>
