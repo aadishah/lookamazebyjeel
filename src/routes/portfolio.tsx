@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 import SectionHeading from "@/components/SectionHeading";
 import portfolio1 from "@/assets/portfolio-1.jpg";
 import portfolio2 from "@/assets/portfolio-2.jpg";
+import portfolio3 from "@/assets/portfolio-3.jpg";
 import portfolio4 from "@/assets/portfolio-4.jpg";
 import portfolio5 from "@/assets/portfolio-5.jpg";
 import portfolio6 from "@/assets/portfolio-6.jpg";
-import toolsFlatlay from "@/assets/tools-flatlay.jpg";
-
+import portfolio7 from "@/assets/portfolio-7.jpg";
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
     meta: [
@@ -21,12 +21,13 @@ export const Route = createFileRoute("/portfolio")({
 });
 
 const works = [
-  { src: portfolio1, label: "Glamorous Party Look", category: "Party" },
-  { src: portfolio2, label: "Traditional Bridal", category: "Bridal" },
-  { src: toolsFlatlay, label: "Professional Kit", category: "Behind the Scenes" },
-  { src: portfolio4, label: "Engagement Glow", category: "Engagement" },
-  { src: portfolio5, label: "Editorial Bold", category: "Editorial" },
-  { src: portfolio6, label: "Reception Queen", category: "Bridal" },
+  { src: portfolio1, alt: "Traditional bridal makeup" },
+  { src: portfolio2, alt: "Glamorous smokey eye look" },
+  { src: portfolio3, alt: "Engagement ceremony makeup" },
+  { src: portfolio4, alt: "Colorful party look" },
+  { src: portfolio5, alt: "Bridal veil look" },
+  { src: portfolio6, alt: "Sparkle party makeup" },
+  { src: portfolio7, alt: "Elegant bridal glam" },
 ];
 
 function PortfolioPage() {
