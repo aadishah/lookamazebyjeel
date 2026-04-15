@@ -129,7 +129,7 @@ function ContactPage() {
             <div className="bg-card rounded-2xl p-6 shadow-sm">
               <h3 className="font-heading text-lg font-semibold text-foreground">💬 WhatsApp</h3>
               <a
-                href="https://wa.me/917303132488"
+                href="https://wa.me/917303132488?text=Hi%20Jeel!%20I'd%20like%20to%20book%20a%20makeup%20session."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-1 text-primary font-body font-semibold hover:underline block"

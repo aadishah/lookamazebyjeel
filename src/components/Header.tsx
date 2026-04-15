@@ -9,7 +9,6 @@ const navLinks = [
   { to: "/about", label: "About" },
   { to: "/services", label: "Services" },
   { to: "/testimonials", label: "Testimonials" },
-  { to: "/pricing", label: "Pricing" },
   { to: "/contact", label: "Contact" },
 ] as const;
 
@@ -35,14 +34,6 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
-          <a
-            href="https://wa.me/917303132488"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-primary text-primary-foreground px-4 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity"
-          >
-            WhatsApp Us 💬
-          </a>
         </nav>
 
         {/* Mobile hamburger */}
@@ -78,14 +69,6 @@ export default function Header() {
                   {link.label}
                 </Link>
               ))}
-              <a
-                href="https://wa.me/917303132488"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-primary text-primary-foreground px-6 py-2.5 rounded-lg text-sm font-medium"
-              >
-                WhatsApp Us 💬
-              </a>
             </nav>
           </motion.div>
         )}
