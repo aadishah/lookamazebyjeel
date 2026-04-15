@@ -42,21 +42,17 @@ function PortfolioPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08 }}
-              className="group rounded-2xl overflow-hidden bg-card shadow-sm hover:shadow-lg transition-shadow"
+              className="rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow"
             >
               <div className="aspect-[3/4] overflow-hidden">
                 <img
                   src={work.src}
                   alt={work.label}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   loading="lazy"
                   width={800}
                   height={1000}
                 />
-              </div>
-              <div className="p-4">
-                <span className="text-xs font-body font-medium text-primary bg-rose-soft px-3 py-1 rounded-full">{work.category}</span>
-                <h3 className="mt-2 font-heading text-lg font-semibold text-foreground">{work.label}</h3>
               </div>
             </motion.div>
           ))}
