@@ -20,14 +20,18 @@ export const Route = createFileRoute("/")({
   component: HomePage,
 });
 
-const heroImages = [heroSlide1, heroSlide2, heroSlide3];
+const heroSlides = [
+  { src: heroSlide1, position: "object-center" },
+  { src: heroSlide2, position: "object-center" },
+  { src: heroSlide3, position: "object-top" },
+];
 
 function HomePage() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % heroImages.length);
+      setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
     }, 4000);
     return () => clearInterval(timer);
   }, []);
@@ -39,13 +43,13 @@ function HomePage() {
         <AnimatePresence mode="wait">
           <motion.img
             key={currentSlide}
-            src={heroImages[currentSlide]}
+            src={heroSlides[currentSlide].src}
             alt="Makeup by Jeel Shah"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 1 }}
-            className="absolute inset-0 w-full h-full object-cover"
+            className={`absolute inset-0 w-full h-full object-cover ${heroSlides[currentSlide].position}`}
             width={1920}
             height={1080}
           />
