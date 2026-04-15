@@ -59,7 +59,7 @@ function AboutPage() {
                 href="https://www.instagram.com/_lookamaze_/"
                 
                 rel="noopener noreferrer"
-                className="border border-primary text-primary px-6 py-2.5 rounded-xl font-body font-semibold text-sm hover:bg-primary hover:text-primary-foreground transition-colors"
+                className="bg-primary text-primary-foreground px-6 py-2.5 rounded-xl font-body font-semibold text-sm hover:opacity-90 transition-opacity"
               >
                 Instagram 📸
               </a>
