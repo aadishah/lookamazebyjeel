@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import SectionHeading from "@/components/SectionHeading";
 
+const WEB3FORMS_ACCESS_KEY = "0a3640fe-c8a5-4a9e-ac56-528ccd03d24c";
+
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
@@ -17,19 +19,36 @@ export const Route = createFileRoute("/contact")({
 
 function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const form = e.currentTarget;
-    const data = new FormData(form);
-    const name = data.get("name") as string;
-    const phone = data.get("phone") as string;
-    const service = data.get("service") as string;
-    const message = data.get("message") as string;
+    setLoading(true);
+    setError("");
 
-    const whatsappText = `Hi Jeel! I'd like to register for your services.\n\nName: ${name}\nPhone: ${phone}\nService: ${service}\nMessage: ${message}`;
-    window.location.href = `https://wa.me/917303132488?text=${encodeURIComponent(whatsappText)}`;
-    setSubmitted(true);
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    formData.append("access_key", WEB3FORMS_ACCESS_KEY);
+    formData.append("subject", "New Lookamaze Inquiry");
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+      const data = await res.json();
+      if (data.success) {
+        setSubmitted(true);
+        form.reset();
+      } else {
+        setError("Something went wrong. Please try again.");
+      }
+    } catch {
+      setError("Failed to send. Please try again or reach out via WhatsApp.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -100,11 +119,15 @@ function ContactPage() {
                     placeholder="Tell me about your event, date, and any preferences..."
                   />
                 </div>
+                {error && (
+                  <p className="text-destructive text-sm font-body">{error}</p>
+                )}
                 <button
                   type="submit"
-                  className="w-full bg-primary text-primary-foreground py-3 rounded-xl font-body font-semibold hover:opacity-90 transition-opacity"
+                  disabled={loading}
+                  className="w-full bg-primary text-primary-foreground py-3 rounded-xl font-body font-semibold hover:opacity-90 transition-opacity disabled:opacity-60"
                 >
-                  Submit
+                  {loading ? "Sending..." : "Submit"}
                 </button>
               </form>
             )}
