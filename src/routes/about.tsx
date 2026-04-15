@@ -70,10 +70,9 @@ function AboutPage() {
         {/* Stats */}
         <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6">
           {[
-            { num: "500+", label: "Happy Brides" },
-            { num: "50+", label: "Film Projects" },
-            { num: "8+", label: "Years Experience" },
-            { num: "Mumbai", label: "Based In" },
+            { num: "40+", label: "Happy Clients" },
+            { num: "8+", label: "Film Projects" },
+            { num: "6+", label: "Years Experience" },
           ].map((stat, i) => (
             <motion.div
               key={stat.label}
