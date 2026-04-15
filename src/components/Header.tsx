@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import logo from "@/assets/logo.jpg";
 
 const navLinks = [
   { to: "/", label: "Home" },
@@ -17,9 +18,9 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
-        <Link to="/" className="font-heading text-2xl font-bold text-primary tracking-tight">
-          Lookamaze
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-2">
+        <Link to="/" className="flex items-center gap-2">
+          <img src={logo} alt="Lookamaze by Jeel" className="h-12 w-auto" />
         </Link>
 
         {/* Desktop nav */}

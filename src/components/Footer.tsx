@@ -1,11 +1,12 @@
 import { Link } from "@tanstack/react-router";
+import logo from "@/assets/logo.jpg";
 
 export default function Footer() {
   return (
     <footer className="bg-foreground text-background py-12">
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
-          <h3 className="font-heading text-2xl font-bold mb-3">Lookamaze</h3>
+          <img src={logo} alt="Lookamaze by Jeel" className="h-16 w-auto mb-3 rounded-lg brightness-200" />
           <p className="text-background/70 text-sm leading-relaxed">
             Professional makeup artistry by Jeel Shah. Based in Mumbai, serving brides, production houses & personal clients.
           </p>
