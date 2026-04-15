@@ -1,7 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
-import heroBridal from "@/assets/hero-bridal.jpg";
 import heroSlide1 from "@/assets/hero-slide-1.jpg";
 import heroSlide2 from "@/assets/hero-slide-2.jpg";
 import heroSlide3 from "@/assets/hero-slide-3.jpg";
@@ -21,7 +20,7 @@ export const Route = createFileRoute("/")({
   component: HomePage,
 });
 
-const heroImages = [heroBridal, heroSlide1, heroSlide2, heroSlide3];
+const heroImages = [heroSlide1, heroSlide2, heroSlide3];
 
 function HomePage() {
   const [currentSlide, setCurrentSlide] = useState(0);
