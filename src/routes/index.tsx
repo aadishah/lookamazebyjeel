@@ -22,7 +22,7 @@ export const Route = createFileRoute("/")({
 
 const heroSlides = [
   { src: heroSlide1, position: "object-center" },
-  { src: heroSlide2, position: "object-center" },
+  { src: heroSlide2, position: "object-top" },
   { src: heroSlide3, position: "object-top" },
 ];
 
