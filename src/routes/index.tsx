@@ -155,7 +155,6 @@ function HomePage() {
           <div className="mt-8 flex justify-center">
             <a
               href="https://wa.me/917303132488?text=Hi%20Jeel!%20I'd%20like%20to%20book%20a%20makeup%20session."
-              target="_blank"
               rel="noopener noreferrer"
               className="bg-[#25D366] text-[#fff] px-8 py-3.5 rounded-xl font-body font-semibold hover:scale-105 transition-transform"
             >
