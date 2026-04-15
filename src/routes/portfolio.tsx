@@ -8,6 +8,7 @@ import portfolio4 from "@/assets/portfolio-4.jpg";
 import portfolio5 from "@/assets/portfolio-5.jpg";
 import portfolio6 from "@/assets/portfolio-6.jpg";
 import portfolio7 from "@/assets/portfolio-7.jpg";
+import portfolio8 from "@/assets/portfolio-8.jpg";
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
     meta: [
@@ -28,6 +29,7 @@ const works = [
   { src: portfolio5, alt: "Bridal veil look" },
   { src: portfolio6, alt: "Sparkle party makeup" },
   { src: portfolio7, alt: "Elegant bridal glam" },
+  { src: portfolio8, alt: "Bridal couture look" },
 ];
 
 function PortfolioPage() {
