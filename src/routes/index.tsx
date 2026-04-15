@@ -43,7 +43,6 @@ function HomePage() {
             >
               Learn More →
             </Link>
-            </a>
             <Link
               to="/portfolio"
               className="bg-background/20 backdrop-blur-sm text-background border border-background/30 px-8 py-3.5 rounded-xl font-body font-semibold text-base hover:bg-background/30 transition-colors"
