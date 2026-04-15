@@ -18,7 +18,7 @@ const services = [
   {
     emoji: "👰",
     title: "Bridal Makeup",
-    desc: "Complete bridal packages including engagement, mehndi, sangeet, and wedding day looks. HD & airbrush options available.",
+    desc: "Complete bridal packages including engagement, mehndi, sangeet, and wedding day looks.",
     for: "Brides & Families",
   },
   {
