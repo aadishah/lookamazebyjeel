@@ -22,22 +22,16 @@ const services = [
     for: "Brides & Families",
   },
   {
-    emoji: "🎬",
-    title: "Film & TV Makeup",
-    desc: "Character design, prosthetics, beauty makeup for films, TV serials, and ad shoots. Experienced with production house timelines.",
-    for: "Production Houses",
-  },
-  {
     emoji: "🎉",
     title: "Party & Non-Bridal Makeup",
     desc: "Cocktail parties, receptions, festive occasions — show up looking fabulous every time.",
     for: "Personal Clients",
   },
   {
-    emoji: "🎊",
-    title: "Wedding Event Planning",
-    desc: "Collaborate with wedding planners to ensure seamless beauty for the entire bridal party.",
-    for: "Event Planners",
+    emoji: "🎨",
+    title: "Self Makeup Workshops",
+    desc: "Learn professional makeup techniques in hands-on workshops. Perfect for beginners and enthusiasts who want to do their own glam.",
+    for: "Makeup Enthusiasts",
   },
 ];
 
