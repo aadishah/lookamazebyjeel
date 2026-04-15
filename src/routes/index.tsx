@@ -98,9 +98,9 @@ function HomePage() {
           <div className="mt-4 mx-auto w-16 h-1 rounded-full bg-primary" />
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { emoji: "👰", title: "Bridal Specialist", desc: "Stunning bridal looks for your most special day — from mehndi to reception." },
-              { emoji: "🎬", title: "Film & TV Makeup", desc: "Character & beauty makeup for Bollywood productions and ad films." },
-              { emoji: "✨", title: "Personal Glam", desc: "Party, engagement, pre-wedding shoots — look your absolute best." },
+              { emoji: "✨", title: "Detail-Driven Perfection", desc: "Every element is carefully crafted to create a flawless, refined finish; without compromise." },
+              { emoji: "🤍", title: "A Calm, Comfort-First Experience", desc: "A relaxed, reassuring space where you feel confident, cared for, and at ease." },
+              { emoji: "🌸", title: "Your Vision, Beautifully Enhanced", desc: "I listen closely and create looks that reflect you; never overpowering, always elevating your natural beauty." },
             ].map((item, i) => (
               <motion.div
                 key={item.title}
