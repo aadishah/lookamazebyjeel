@@ -37,13 +37,12 @@ function HomePage() {
             Professional makeup artistry for brides, films & every occasion — curated with love in Mumbai ✨
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://wa.me/917303132488?text=Hi%20Jeel!%20I'd%20love%20to%20book%20a%20session."
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/about"
               className="bg-[#25D366] text-[#fff] px-8 py-3.5 rounded-xl font-body font-semibold text-base hover:scale-105 transition-transform shadow-lg"
             >
-              💬 Chat on WhatsApp
+              Learn More →
+            </Link>
             </a>
             <Link
               to="/portfolio"
