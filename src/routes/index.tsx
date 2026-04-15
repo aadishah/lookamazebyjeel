@@ -120,16 +120,10 @@ function HomePage() {
       <section className="py-20 px-4 bg-rose-soft">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">Ready to Look Amazing? 🌟</h2>
-          <p className="mt-4 text-muted-foreground text-lg">Register yourself or message me directly — let's create your perfect look together!</p>
-          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/contact"
-              className="bg-primary text-primary-foreground px-8 py-3.5 rounded-xl font-body font-semibold hover:opacity-90 transition-opacity"
-            >
-              Register Now ✍️
-            </Link>
+          <p className="mt-4 text-muted-foreground text-lg">Message me now, let's create your perfect look together!</p>
+          <div className="mt-8 flex justify-center">
             <a
-              href="https://wa.me/917303132488"
+              href="https://wa.me/917303132488?text=Hi%20Jeel!%20I'd%20like%20to%20book%20a%20makeup%20session."
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#25D366] text-[#fff] px-8 py-3.5 rounded-xl font-body font-semibold hover:scale-105 transition-transform"
