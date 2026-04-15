@@ -48,7 +48,7 @@ function PortfolioPage() {
               <div className="aspect-[3/4] overflow-hidden">
                 <img
                   src={work.src}
-                  alt={work.label}
+                  alt={work.alt}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   loading="lazy"
                   width={800}
