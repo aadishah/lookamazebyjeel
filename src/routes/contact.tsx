@@ -28,7 +28,7 @@ function ContactPage() {
     const message = data.get("message") as string;
 
     const whatsappText = `Hi Jeel! I'd like to register for your services.\n\nName: ${name}\nPhone: ${phone}\nService: ${service}\nMessage: ${message}`;
-    window.open(`https://wa.me/917303132488?text=${encodeURIComponent(whatsappText)}`, "_blank");
+    window.location.href = `https://wa.me/917303132488?text=${encodeURIComponent(whatsappText)}`;
     setSubmitted(true);
   };
 
@@ -127,7 +127,6 @@ function ContactPage() {
               <h3 className="font-heading text-lg font-semibold text-foreground">💬 WhatsApp</h3>
               <a
                 href="https://wa.me/917303132488?text=Hi%20Jeel!%20I'd%20like%20to%20book%20a%20makeup%20session."
-                target="_blank"
                 rel="noopener noreferrer"
                 className="mt-1 text-primary font-body font-semibold hover:underline block"
               >
