@@ -21,12 +21,36 @@ export const Route = createFileRoute("/")({
   component: HomePage,
 });
 
+const heroImages = [heroBridal, heroSlide1, heroSlide2, heroSlide3];
+
 function HomePage() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % heroImages.length);
+    }, 4000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <div>
       {/* Hero */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <img src={heroBridal} alt="Bridal makeup by Jeel Shah" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
+        <AnimatePresence mode="wait">
+          <motion.img
+            key={currentSlide}
+            src={heroImages[currentSlide]}
+            alt="Makeup by Jeel Shah"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+            className="absolute inset-0 w-full h-full object-cover"
+            width={1920}
+            height={1080}
+          />
+        </AnimatePresence>
         <div className="absolute inset-0 bg-gradient-hero" />
         <motion.div
           initial={{ opacity: 0, y: 30 }}
