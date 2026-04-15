@@ -68,7 +68,7 @@ function ContactPage() {
               <div className="text-center py-12">
                 <span className="text-5xl">🎉</span>
                 <h3 className="mt-4 font-heading text-xl font-bold text-foreground">Thank You!</h3>
-                <p className="mt-2 text-muted-foreground text-sm">Your details have been sent via WhatsApp. I'll get back to you soon!</p>
+                <p className="mt-2 text-muted-foreground text-sm">Your message has been sent successfully. I'll get back to you soon!</p>
                 <button
                   onClick={() => setSubmitted(false)}
                   className="mt-4 text-primary font-body font-semibold text-sm hover:underline"
