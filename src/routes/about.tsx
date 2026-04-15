@@ -33,16 +33,19 @@ function AboutPage() {
           >
             <span className="text-primary font-body font-semibold text-sm uppercase tracking-wider">About Me</span>
             <h1 className="font-heading text-3xl md:text-4xl font-bold text-foreground mt-2">
-              Hi, I'm Jeel Shah! 👋
+              Hi, I'm Jeel Shah 👋
             </h1>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              I'm a professional makeup artist based in <strong className="text-foreground">Mumbai</strong>, passionate about making every face tell its most beautiful story. From glamorous bridal transformations to dramatic character looks for Bollywood productions — I love curating the perfect look for every occasion.
+              I'm a makeup artist trained at <strong className="text-foreground">Delamar Academy, London</strong>.
             </p>
             <p className="mt-3 text-muted-foreground leading-relaxed">
-              With years of experience working with wedding planners, production houses, and individual clients, I bring creativity, precision, and a whole lot of heart to every session. My mission is simple — to make you feel confident and absolutely stunning.
+              With 6 years of experience, I've worked across bridal, fashion, and shoots.
             </p>
             <p className="mt-3 text-muted-foreground leading-relaxed">
-              Whether it's your wedding day, a film shoot, or a special event — I'm here to make you look and feel like the best version of yourself. 💕
+              I believe in enhancing your natural beauty, not masking it.
+            </p>
+            <p className="mt-3 text-muted-foreground leading-relaxed">
+              My goal is simple — makeup that still feels like you. 💕
             </p>
             <div className="mt-6 flex gap-4">
               <a
