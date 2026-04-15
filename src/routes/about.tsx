@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "framer-motion";
-import toolsFlatlay from "@/assets/tools-flatlay.jpg";
+import jeelPortrait from "@/assets/jeel-portrait.jpg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -24,7 +24,7 @@ function AboutPage() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <img src={toolsFlatlay} alt="Jeel Shah's makeup kit" className="rounded-2xl shadow-lg w-full" loading="lazy" width={1200} height={800} />
+            <img src={jeelPortrait} alt="Jeel Shah — Makeup Artist" className="rounded-2xl shadow-lg w-full object-cover" loading="lazy" width={800} height={1200} />
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: 30 }}
