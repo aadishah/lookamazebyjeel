@@ -30,7 +30,7 @@ function HomePage() {
           transition={{ duration: 0.8 }}
           className="relative z-10 text-center px-4 max-w-3xl"
         >
-          <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold text-background leading-tight">
+          <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
             Your Beauty, <br /><span className="text-gradient-gold">Perfected</span>
           </h1>
           <p className="mt-4 text-background/90 text-lg md:text-xl font-body max-w-lg mx-auto">
@@ -39,7 +39,7 @@ function HomePage() {
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/about"
-              className="bg-[#25D366] text-[#fff] px-8 py-3.5 rounded-xl font-body font-semibold text-base hover:scale-105 transition-transform shadow-lg"
+              className="bg-primary text-primary-foreground px-8 py-3.5 rounded-xl font-body font-semibold text-base hover:scale-105 transition-transform shadow-lg"
             >
               Learn More →
             </Link>
