@@ -59,7 +59,7 @@ function HomePage() {
           className="relative z-10 text-center px-4 max-w-3xl"
         >
           <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
-            Your Beauty, <br /><span className="text-gradient-gold text-white">Perfected</span>
+            Your Beauty, <br /><span className="text-white">Enhanced</span>
           </h1>
           <p className="mt-4 text-background/90 text-lg md:text-xl font-body max-w-lg mx-auto">
             Professional makeup artistry for brides, films & every occasion — curated with love in Mumbai ✨
