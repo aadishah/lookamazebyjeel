@@ -29,21 +29,9 @@ const services = [
   },
   {
     emoji: "🎉",
-    title: "Party & Event Makeup",
+    title: "Party & Non-Bridal Makeup",
     desc: "Cocktail parties, receptions, festive occasions — show up looking fabulous every time.",
     for: "Personal Clients",
-  },
-  {
-    emoji: "📸",
-    title: "Pre-Wedding Shoot",
-    desc: "Camera-ready makeup that photographs beautifully in any lighting — indoor or outdoor.",
-    for: "Couples",
-  },
-  {
-    emoji: "💼",
-    title: "Corporate & Fashion",
-    desc: "Editorial shoots, corporate headshots, brand campaigns — polished and professional.",
-    for: "Brands & Agencies",
   },
   {
     emoji: "🎊",
@@ -69,7 +57,7 @@ function ServicesPage() {
               className="bg-card rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow border border-border"
             >
               <span className="text-4xl">{service.emoji}</span>
-              <h3 className="mt-4 font-heading text-xl font-semibold text-foreground">{service.title}</h3>
+              <h3 className="mt-4 font-heading text-xl font-normal text-foreground">{service.title}</h3>
               <p className="mt-2 text-muted-foreground text-sm leading-relaxed">{service.desc}</p>
               <span className="mt-4 inline-block text-xs font-body font-medium text-primary bg-rose-soft px-3 py-1 rounded-full">
                 For: {service.for}
