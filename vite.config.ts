@@ -9,6 +9,6 @@ export default defineConfig({
     viteTsConfigPaths(),
     tailwindcss(),
     tanstackStart(),
-    viteReact(),
+    viteReact(), 
   ],
 })
