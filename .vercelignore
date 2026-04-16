@@ -3,10 +3,6 @@ node_modules
 .pnp
 .pnp.js
 
-# Production build
-dist
-dist-ssr
-*.local
 
 # Environment variables
 .env
@@ -37,7 +33,3 @@ Thumbs.db
 # Build tools
 .cache
 .eslintcache
-
-# Cloudflare/Wrangler specific
-.wrangler
-wrangler.toml
