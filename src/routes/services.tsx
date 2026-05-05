@@ -53,9 +53,6 @@ function ServicesPage() {
               <span className="text-4xl">{service.emoji}</span>
               <h3 className="mt-4 font-heading text-xl font-normal text-foreground">{service.title}</h3>
               <p className="mt-2 text-muted-foreground text-sm leading-relaxed">{service.desc}</p>
-              <span className="mt-4 inline-block text-xs font-body font-medium text-primary bg-rose-soft px-3 py-1 rounded-full">
-                For: {service.for}
-              </span>
             </motion.div>
           ))}
         </div>
