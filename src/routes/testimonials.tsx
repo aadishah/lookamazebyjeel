@@ -16,39 +16,18 @@ export const Route = createFileRoute("/testimonials")({
 
 const testimonials = [
   {
-    name: "Priya Mehta",
-    role: "Bride",
-    text: "Jeel made me feel like the most beautiful bride! She understood my vision perfectly and the makeup lasted all day. Absolutely magical! 💕",
+    name: "Priyanshi Malpani",
+    text: "Hi Jeel, I just wanted to thank you for the incredible work you and your team (hairstylist) did for me. I've always preferred subtle, natural-looking makeup, and you kept that in mind perfectly across all 6 of my functions. I received so many compliments—everyone absolutely loved your work! It's clear that you're truly skilled at what you do, and your expertise and experience really shine through. I'm so glad I chose you for such an important occasion. I'll definitely be reaching out to you for future events and recommending you to others as well. Thank you once again ♥️",
     rating: 5,
   },
   {
-    name: "Rahul Kapoor",
-    role: "Film Director",
-    text: "Working with Jeel on our film was a breeze. Her character makeup skills are incredible — she brought our characters to life.",
+    name: "Aahuti",
+    text: "Got SO many compliments on my make up. I think you and I have established our comfort in terms of what good looks on me. Many people asked where I got my make up done from. This is only the second time you've done my make up but both the times it's been fabulous. Thank you once again 😘",
     rating: 5,
   },
   {
-    name: "Sneha Desai",
-    role: "Wedding Planner",
-    text: "I always recommend Jeel to my clients. She's professional, punctual, and incredibly talented. The brides always love her!",
-    rating: 5,
-  },
-  {
-    name: "Ananya Sharma",
-    role: "Personal Client",
-    text: "Got my makeup done for a cocktail party and received so many compliments! Jeel is so warm and makes you feel super comfortable.",
-    rating: 5,
-  },
-  {
-    name: "Kavita Joshi",
-    role: "Bride's Mother",
-    text: "Jeel took care of the entire bridal party beautifully. Everyone looked stunning. She's patient and truly talented.",
-    rating: 5,
-  },
-  {
-    name: "Deepak Singh",
-    role: "Production Manager",
-    text: "Reliable, creative, and fast — exactly what we need on set. Jeel is our go-to makeup artist for every project.",
+    name: "Dhruvi Shah",
+    text: "From the very beginning, I knew I was in good hands. You really took the time to understand my skin especially since it wasn't the easiest to work with, with the patchiness and texture and my pigmentation. After the first function, when we realised there was dryness around my under-eyes, I genuinely appreciated how seriously you took it. Instead of sticking to one approach, you kept adapting, experimenting, and improving the makeup with every single event. 💗 By the end of it, everything came together so beautifully, and that's all because of the effort, patience, and care you put in. It wasn't just about doing my makeup- you really went above and beyond to make sure I felt confident and comfortable on my most important days. 🥹🫶🏼 Thank you so much Specksyy for your hard work, dedication and for being so invested throughout. I'm so, so grateful I chose you 🤍 You're amazing at what you do!",
     rating: 5,
   },
 ];
@@ -76,7 +55,6 @@ function TestimonialsPage() {
               <p className="text-muted-foreground text-sm leading-relaxed italic">"{t.text}"</p>
               <div className="mt-4 pt-4 border-t border-border">
                 <p className="font-heading font-semibold text-foreground">{t.name}</p>
-                <p className="text-xs text-muted-foreground">{t.role}</p>
               </div>
             </motion.div>
           ))}
